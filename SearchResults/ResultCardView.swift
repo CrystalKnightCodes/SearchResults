@@ -16,12 +16,12 @@ struct ResultCardView: View {
     HStack(alignment: .top) {
       Image(systemName: vacation.imageName)
         .resizable()
-        .renderingMode(.original)
+        .renderingMode(.original) // Images will have color
         .aspectRatio(contentMode: .fit)
         .frame(width: 150)
         .frame(maxHeight: 200)
         .padding()
-        .background(Color.gray.opacity(0.15))
+        .background(Color.gray.opacity(0.15)) // For contrast
       
       VStack(alignment: .leading) {
         Text(vacation.name)
@@ -34,9 +34,8 @@ struct ResultCardView: View {
         Spacer()
       } //: VStack
       .padding()
-      
     } //: HStack
-    .ignoresSafeArea(.keyboard, edges: .bottom)
+    .padding(.leading)
   }
 }
 

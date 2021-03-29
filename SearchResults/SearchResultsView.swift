@@ -14,29 +14,25 @@ struct SearchResultsView: View {
   
   // MARK: - View
   var body: some View {
-    VStack(alignment: .leading) {
-      HStack {
-        Text(results.count == 1 ? "1 Result" : "\(results.count) Results")
-          .font(.title2)
-      } //: HStack
-      .padding(.leading)
-    
-    Divider()
-    
-    if !results.isEmpty {
-      TabView(selection: $selection)  {
-        ForEach(Array(zip(results.indices, results)), id: \.0) { index, result in
-          ResultCardView(vacation: results[index]).tag(index)
-        }
-      } //: TabView
-      .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+    VStack(alignment: .center) {
+      Text(results.count == 1 ? "1 Result" : "\(results.count) Results")
+        .font(.title2)
       
-    } else {
-      Text("No current results.")
-        .padding(.leading)
-    }
-    
-    Spacer()
+      Divider()
+      
+      if !results.isEmpty {
+        TabView(selection: $selection)  {
+          ForEach(Array(zip(results.indices, results)), id: \.0) { index, result in
+            ResultCardView(vacation: results[index]).tag(index)
+          }
+        } //: TabView
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        
+      } else {
+        Text("No current results.")
+        
+        Spacer()
+      }
     } //: VStack
   }
 }
