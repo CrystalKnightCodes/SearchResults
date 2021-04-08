@@ -17,6 +17,7 @@
 		6AC8339A260B89F10087406E /* SearchMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC83399260B89F10087406E /* SearchMapView.swift */; };
 		6AC8339D260B8B960087406E /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC8339C260B8B960087406E /* SearchResultsView.swift */; };
 		6AC833A3260B8E740087406E /* ResultCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC833A2260B8E740087406E /* ResultCardView.swift */; };
+		6AFFC1CF261F4E07003CA994 /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFFC1CE261F4E07003CA994 /* RegionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6AC83399260B89F10087406E /* SearchMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMapView.swift; sourceTree = "<group>"; };
 		6AC8339C260B8B960087406E /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		6AC833A2260B8E740087406E /* ResultCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCardView.swift; sourceTree = "<group>"; };
+		6AFFC1CE261F4E07003CA994 /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				6AC83390260B72E00087406E /* Models.swift */,
 				6AC83396260B75180087406E /* Mock Data.swift */,
+				6AFFC1CE261F4E07003CA994 /* RegionModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				6AC83391260B72E00087406E /* Models.swift in Sources */,
 				6AC83394260B73AC0087406E /* SearchBarView.swift in Sources */,
 				6AC83383260B728A0087406E /* ContentView.swift in Sources */,
+				6AFFC1CF261F4E07003CA994 /* RegionModel.swift in Sources */,
 				6AC83381260B728A0087406E /* SearchResultsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
